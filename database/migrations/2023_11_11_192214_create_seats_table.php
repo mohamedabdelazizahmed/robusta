@@ -17,7 +17,8 @@ return new class extends Migration
             $table->foreignId('trip_id')->constrained();  //CAIRO - ALEXANDRIA
             $table->foreignId('bus_id')->constrained(); // BUS-I  - 12
             $table->foreignId('user_id')->constrained();  // loggedIN - or -any user 
-            $table->foreignId('end_station_id')->constrained(); // tanta
+            $table->unsignedBigInteger('end_station_id');
+            $table->foreign('end_station_id')->references('id')->on('stations');
             $table->timestamps();
         });
     }
