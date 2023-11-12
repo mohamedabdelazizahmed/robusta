@@ -50,7 +50,7 @@ Books a seat on a bus trip for a specified user.
   "bus_id": 2,
   "user_id": 3,
   "end_station_id": 4
-}
+}```
 ## Get Available Seats
 
 ### Endpoint
