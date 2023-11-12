@@ -56,6 +56,8 @@ Books a seat on a bus trip for a specified user.
 ### Endpoint
 GET /api/seats/available/{tripId?}/{BusId?}
 
+
+
 ### Description
 
 Retrieves the available seats for a specified trip and bus (optional).
