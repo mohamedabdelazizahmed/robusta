@@ -51,4 +51,43 @@ Books a seat on a bus trip for a specified user.
   "user_id": 3,
   "end_station_id": 4
 }
+## Get Available Seats
+
+### Endpoint
+GET /api/seats/available/{tripId?}/{BusId?}
+
+### Description
+
+Retrieves the available seats for a specified trip and bus (optional).
+
+### Request Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| tripId | integer (optional) | The ID of the trip (optional) |
+| BusId | integer (optional) | The ID of the bus (optional) |
+
+### Response Body
+
+| Parameter | Type | Description |
+|---|---|---|
+| seats | array | An array of available seat IDs |
+
+### Example Usage
+
+GET /api/seats/available/1
+GET /api/seats/available?BusId=2
+
+
+### Error Codes
+
+| Code | Description |
+|---|---|
+| 404 | Trip or bus not found |
+
+
+
+
+
+
 
