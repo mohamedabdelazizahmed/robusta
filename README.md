@@ -20,6 +20,7 @@
 ## Book a Seat
 
 ### Endpoint
+POST localhost/api/seats/book
 
 ### Description
 
