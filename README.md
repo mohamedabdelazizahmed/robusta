@@ -44,14 +44,8 @@ Books a seat on a bus trip for a specified user.
 
 ### Example Usage
 
-```json
-{
-  "trip_id": 1,
-  "bus_id": 2,
-  "user_id": 3,
-  "end_station_id": 4
-}```
-## Get Available Seats
+
+### Get Available Seats
 
 ### Endpoint
 GET /api/seats/available/{tripId?}/{BusId?}
