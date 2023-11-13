@@ -7,9 +7,10 @@
  this project is to implement a building a fleet-management system (bus-booking system) using the latest version of the Laravel Framework.
 
 - Using Docker by Laravel Sail  in the repository.
-- Using Factory to seed the table using the command `php artisan db: seed`  in the repository.
+- Using Factory to seed the table using the command `sail php artisan db: seed`  in the repository.
 - implementing 3 endpoints for bus booking.
-- implementing test cases for each model 
+- implementing test cases for each model using the command `sail php artisan test` to run successfully test case 
+- implementing  the Authentication using Laravel Sanctum package 
 
 
 
@@ -20,7 +21,7 @@
 ## Book a Seat
 
 ### Endpoint
-POST localhost/api/seats/book
+POST localhost/api/v1/seats/book
 
 ### Description
 
@@ -46,7 +47,7 @@ Books a seat on a bus trip for a specified user.
 ### Get Available Seats
 
 ### Endpoint
-GET /api/seats/available/{tripId?}/{BusId?}
+GET /api/v1/seats/available/{tripId?}/{BusId?}
 
 
 
@@ -69,8 +70,8 @@ Retrieves the available seats for a specified trip and bus (optional).
 
 ### Example Usage
 
-GET /api/seats/available/1
-GET /api/seats/available?BusId=2
+GET /api/v1/seats/available/1
+GET /api/v1/seats/available?BusId=2
 
 
 ### Error Codes
